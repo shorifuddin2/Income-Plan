@@ -6,9 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Income Plan</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
 </head>
 <body>
-    <h1>Monthly Income Plan</h1>
+    <div class="container">
+        <header>
+            <h1 class="text-center m-3 font-bold">Monthly Income Plan</h1>
+        </header>
+    
+        
+    </div>
+    <main class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-5 col-lg-8 mb-5">
+            <div class="">
+                <img class="rounded img-fluid " src="./image/monyCalculet.jpg" alt="Mony Calculate">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-4 badge bg-secondary">
+            
+                <div class="">
+                    <h3 class=" font-bold">Income</h3>
+                    <span>Income: </span><input id="total-income" type="number"><br><br>
+                    
+                    <h3 class=" font-bold">Expenses</h3>
+                    <span>Food: </span><input id="food-input" type="number"><br><br>
+                    <span>Mach: </span><input id="mach-vara" type="number"><br><br>
+                    <span>Extra: </span><input id="extra-coroch" type="number"><br><br>
+                    <button id="calculate-btn" class="badge bg-info text-dark fs-5 p-2 m-2 rounded">Calculate</button>
+    
+                    <h3 class="font-bold">Total Expenses: <span id="total-coroch">00</span> </h3>
+                    <h3 class="font-bold">Balance: <span id="balance">00</span> </h3>
+    
+                    <div>
+                        <span>Save: </span><input class="w-5" id="save-taka" type="number">
+                        <span>%</span>
+                    <button id="save-btn" class="badge bg-info text-dark fs-5 p-2 rounded">Save</button>
+    
+                    <h3 class="font-bold">Saving Amount: <span id="saving-amount">00</span> </h3>
+                    <h3 class="font-bold">Remaining Balance: <span id="remain-balance">00</span> </h3>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </div>
+</main>
 
 
     <script src="./js/monyPlan.js"></script>
