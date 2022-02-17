@@ -18,44 +18,46 @@
     </header>
     <main>
         <div class="container overflow-hidden mt-5">
-            <div class="row gx-5">
+            <div class="row gx-5 ">
                 <div class="col-lg-8 col-md-6 col-sm-12 ">
-                    <img class="img-fluid h-100 rounded" src="./image/monyCalculet.jpg" alt="Calculation Imag">
+                    <img class="img-fluid h-100 rounded my-3 " src="./image/monyCalculet.jpg" alt="Calculation Imag">
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 badge bg-secondary rounded">
+                <br>
+                <br>
+                <div class="col-lg-4 col-md-6 col-sm-12 badge bg-secondary rounded my-5">
                     <div>
-                        <h4 class="text-center mt-5">Income</h4>
+                        <h4 class="text-center mt-5 text-danger">Income</h4>
                         <p class="text-center mt-3">
-                            <span class="font-bold ">Income :</span>
+                            <span class="font-bold text-warning">Income :</span>
                             <input id="input-income" class="ms-3 rounded " type="text">
                         </p>
                     </div>
                     <div>
-                        <h4 class="text-center mt-5">Expenses</h4>
+                        <h4 class="text-center mt-5 text-danger">Expenses</h4>
                         <p class="text-center mt-3">
-                            <span class="font-bold"> Food :</span>
+                            <span class="font-bold text-warning"> Food :</span>
                             <input id="input-food-cost" class="ms-3 rounded" type="text">
                         </p>
                         <p class="text-center mt-3">
-                            <span class="font-bold"> Rent :</span>
+                            <span class="font-bold text-warning"> Rent :</span>
                             <input id="input-rent-cost" class="ms-3 rounded" type="text">
                         </p>
                         <p class="text-center mt-3">
-                            <span class="font-bold ">Other:</span>
+                            <span class="font-bold text-warning">Other:</span>
                             <input id="input-Clothes-cost" class="ms-3 rounded" type="text">
                         </p>
                         <div class="text-center">
-                            <button id="calculate-button" class="btn btn-primary">Calculate</button>
+                            <button id="calculate-button" class="btn btn-primary font-bold">Calculate</button>
                         </div>
 
                         <div class="text-center mt-5">
                             <h5>Total Expenses: <span id="total-expenses">00</span> </h5>
-                            <h5>Balance: <span id="balance-money">00</span></h5>
+                            <h5>Balance: <span class="text-danger" id="balance-money">00</span></h5>
                         </div>
 
 
                         <div class="text-center mt-3">
-                            <span class="ms-2">
+                            <span class="ms-2 text-warning">
                                 Save
                             </span>
                             <span class="ms-2 w-75">
@@ -70,7 +72,7 @@
                         </div>
                         <div class="text-center mt-3">
                             <h5>Saving Amount: <span id="saved-balance">00</span> </h5>
-                            <h5>Remaining Balance: <span id="remaining-balance">00</span></h5>
+                            <h5>Remaining Balance: <span id="remaining-balance" class="text-danger">00</span></h5>
                         </div>
 
                     </div>
