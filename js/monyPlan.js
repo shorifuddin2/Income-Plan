@@ -69,8 +69,8 @@ document.getElementById('save-button').addEventListener('click', function () {
       alert('please input a positive number')
   }
 
-  const savedBalanceTotal = inputIncomeRaw.value / 100 * presentOutput;
-  saveBalanceText.innerText = savedBalanceTotal;
+  const savedTotalBalance = inputIncomeRaw.value / 100 * presentOutput;
+  saveBalanceText.innerText = savedTotalBalance;
 
   // for balance money
   const balanceMoney = document.getElementById('balance-money');
@@ -81,11 +81,11 @@ document.getElementById('save-button').addEventListener('click', function () {
   const remainingBalance = document.getElementById('remaining-balance');
   const remainingBalanceText = remainingBalance.innerText;
   const remainingTotalValue = parseFloat(remainingBalanceText);
-  const totalRemainingBalance = balanceMoneyTotal - savedBalanceTotal;
+  const totalRemainingBalance = balanceMoneyTotal - savedTotalBalance;
   remainingBalance.innerText = totalRemainingBalance;
 
   // for error part 
-  if (balanceMoneyTotal < savedBalanceTotal) {
+  if (balanceMoneyTotal < savedTotalBalance) {
       alert('you cant save more balance then your extra balance')
   }
 
